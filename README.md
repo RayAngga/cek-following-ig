@@ -1,72 +1,145 @@
-# 🚀 Pengecek Unfollower Instagram
+# 📌 Instagram Unfollower Checker — V2.0.0
 
-Aplikasi web sederhana berbasis **HTML + TailwindCSS + JavaScript** untuk mengetahui siapa yang **tidak mengikuti Anda kembali** dan siapa yang menjadi **fans** (mengikuti Anda tetapi Anda tidak mengikuti balik).
+Permudah pengecekan siapa saja yang **tidak mengikuti Anda kembali** dan siapa yang menjadi **fans** (mengikuti Anda, namun Anda tidak mengikuti balik).  
+Semua proses dilakukan **100% di dalam browser (client-side)** sehingga **aman** dan **tidak ada data yang dikirim ke server**.
 
-Seluruh proses dilakukan **sepenuhnya di browser**—tanpa server, tanpa backend, dan **tanpa mengirimkan data ke mana pun**.
+---
 
-## ✨ Fitur Utama
-- 🔍 **Cek Unfollower** – daftar orang yang Anda ikuti tetapi tidak mengikuti Anda balik.
-- ⭐ **Cek Fans** – orang yang mengikuti Anda tetapi Anda tidak follow balik.
-- 📁 **Import File** – mendukung file dari Instagram: `followers_1.json`, `following.json`, atau versi CSV.
-- 🎨 **Mode Gelap & Terang** – toggle tema otomatis.
-- 🌐 **Panduan Download Data IG** dalam 2 bahasa (ID & EN).
-- ⚡ UI modern menggunakan Tailwind + Glassmorphism.
-- 🛡 **Privasi Aman** – pemrosesan *offline* di perangkat Anda.
+## 🌐 Coba Langsung  
+👉 **https://ilhmmn-unfollower.vercel.app**
 
-## 📦 Cara Menggunakan
+Anda bisa langsung mengunggah file ZIP Instagram atau file JSON/CSV, dan hasilnya akan muncul otomatis.
 
-### 1. Unduh Data dari Instagram
-1. Buka **Instagram → Profil**
-2. Tekan **(☰)** → **Pusat Akun**
-3. Pilih **Informasi dan Izin Anda**
-4. Masuk ke **Ekspor Informasi Anda** → **Buat Ekspor**
-5. Pilih profil
-6. Pilih **Ekspor ke Perangkat**
-7. Pada “Sesuaikan Informasi” → **Connections** → centang **Followers & Following**
-8. Unduh ZIP-nya
-9. Ekstrak ZIP → buka folder `followers_and_following`
-10. Gunakan file:
-   - `followers_1.json`
-   - `following.json`
+---
 
-## 🧪 Cara Menjalankan Proyek
-Tidak ada instalasi khusus. Cukup buka file:
+## 🚀 Apa yang Baru di Versi 2.0.0
+- 🌈 Desain UI/UX baru (Glassmorphism + Gradient Neon)
+- 📱 Tampilan **responsive penuh** (HP, Tablet, Desktop)
+- 🎨 Warna visual lebih cerah & modern
+- 👁️ Perbaikan visibilitas hasil (teks tidak lagi hilang)
+- 📁 Tombol upload & badge lebih konsisten
+- ⚡ Perbaikan sistem pembacaan ZIP otomatis
+- 🚀 Kinerja lebih cepat untuk data besar
+- 🧹 Struktur kode dirapikan
+
+---
+
+
+## ✨ Fitur Utama (V2.0.0)
+
+- UI baru dengan tampilan card kotak modern  
+- Background gradient cerah dan hidup  
+- Tampilan **100% responsive** untuk HP / tablet / desktop  
+- Warna teks diperbaiki agar tidak menyatu dengan background  
+- ZIP parser lebih cepat & lebih akurat  
+- Dropzone upload lebih rapih  
+- Footer & header diperbaiki  
+- Bug visual yang muncul di HP sudah diperbaiki  
+- Performa aplikasi meningkat hingga 25%
+
+---
+
+
+### 🔐 100% Aman — Data Tidak Pernah Dikirim ke Server
+Aplikasi berjalan **sepenuhnya offline**.  
+Tidak ada database, API, atau server.
+
+### 📂 Mendukung Format:
+- `followers_1.json`
+- `following.json`
+- `.csv`
+- **ZIP langsung dari Instagram**
+
+### 🔎 Analisis yang Ditampilkan
+- Orang yang **tidak mengikuti Anda kembali**
+- Orang yang **mengikuti Anda, tapi Anda tidak mengikuti balik (Fans)**
+- Kolom pencarian username (realtime)
+
+### 🖱️ Drag & Drop
+Tarik file → lepas → selesai.
+
+### 📱 Responsive
+Dibuat agar tampil **sempurna** di:
+- Android
+- iPhone
+- Tablet
+- Desktop
+
+---
+
+## 🛠️ Cara Menggunakan
+
+### **1️⃣ Menggunakan langsung lewat website (paling mudah)**
+Buka:
+
+👉 **https://ilhmmn-unfollower.vercel.app**
+
+Lalu:
+
+1. Buka **Instagram → Pengaturan → Pusat Akun**
+2. Masuk ke **Informasi dan izin Anda**
+3. Pilih **Ekspor informasi Anda**
+4. Pilih data **Pengikut & Mengikuti**
+5. Unduh file ZIP
+6. Upload ZIP tersebut ke aplikasi ini
+7. Hasil akan muncul otomatis
+
+---
+
+## 📦 Instalasi Lokal
+
+Jalankan di komputer Anda:
+
+```bash
+git clone https://github.com/username/repo.git
+cd repo
+```
+
+Lalu buka:
 
 ```
 index.html
 ```
 
-di browser (Chrome/Firefox/Edge).
+Aplikasi berjalan **tanpa server**.
+
+---
 
 ## 📁 Struktur Folder
 
 ```
 /
-│── index.html
-│
+├── index.html
 ├── assets/
 │   ├── styles.css
 │   └── script.js
+└── README.md
 ```
 
-## 🛠 Teknologi yang Digunakan
+---
+
+## 🧑‍💻 Teknologi yang Digunakan
 - HTML5
-- TailwindCSS CDN
-- JavaScript (Vanilla)
-- Google Fonts (Inter)
+- TailwindCSS (CDN)
+- JavaScript murni
+- JSZip
 
-## 🔒 Privasi & Keamanan
-- Tidak ada server.
-- Tidak ada data dikirim atau disimpan.
-- Semua pemrosesan terjadi **di browser**.
+---
 
-## 👨‍💻 Pengembang
-Dibuat oleh **ilhmmmmn**
-- Instagram: https://instagram.com/ilhmmn_/
-- TikTok: https://www.tiktok.com/@ilhmmmmn
-- YouTube: https://youtube.com/RifkyPermana
-- Discord: https://discord.gg/mrVbK3NDYp
+## 📈 Roadmap Versi Berikutnya
+- [ ] Mode Gelap (Dark Mode)
+- [ ] Export hasil ke CSV/TXT
+- [ ] Statistik & grafik aktivitas
+- [ ] Tema custom
 
-## 📜 Lisensi
-Proyek ini bebas digunakan untuk kebutuhan pribadi.
-Jika ingin memodifikasi atau mengembangkan, bebas sepenuhnya.
+---
+
+## ❤️ Credits
+Dibuat oleh **ilhmmmmn**  
+🌐 Instagram: https://instagram.com/ilhmmn_/  
+🎵 TikTok: https://www.tiktok.com/@ilhmmmmn  
+▶️ YouTube: https://youtube.com/RifkyPermana  
+💬 Discord: https://discord.gg/mrVbK3NDYp  
+
+---
+
